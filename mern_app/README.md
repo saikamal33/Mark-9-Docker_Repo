@@ -21,7 +21,9 @@ docker build -t mern-backend .
 Run the server
 docker run --name=backend --network=demo -d -p 5050:5050 mern-backend
 
-## we have automated the above steps using docker compose, this will create custome network, build images in front and backend, lauch a db instance along with fron and backend container and connect them in the custome network.
+## docker compose 
+we have automated the above steps with docker compose file, it will create custome network, build images in front and backend, lauch a db instance along with fron and backend container and connect them in the custome network.
+
 docker-compose up -d
 
 
