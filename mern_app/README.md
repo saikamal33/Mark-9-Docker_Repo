@@ -39,7 +39,9 @@ docker-compose up -d
 we need to have db container running first before the backend
 
 if we are launching it in ec2 instance, change the localhost to the public ip of the ec2 inside this files
+
  mern_app/mern/frontend/src/components/Record.yml
+ 
  mern_app/mern/frontend/src/components/RecordList.yml
 
 in case of lauching the composed file multiple times, make sure to remove the networks along with the containers and images created by the composed file 
