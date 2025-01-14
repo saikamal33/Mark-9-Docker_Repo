@@ -1,4 +1,4 @@
-FROM node:18.9.1
+FROM node:latest
 
 WORKDIR /app
 
@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 5050
 
-CMD ["npm","start"]
+CMD ["npm", "start"]
