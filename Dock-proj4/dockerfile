@@ -1,4 +1,5 @@
-## image to have pre configured docker and maven 
+## image to have pre configured docker and maven
+## PS: this docker has no docker.sock present so connect it to the host docker.sock file.
 
 FROM ubuntu:20.04
 
