@@ -1,3 +1,5 @@
+## image to have pre configured docker and maven 
+
 FROM ubuntu:20.04
 
 ENV DEBIAN_FRONTEND=noninteractive
