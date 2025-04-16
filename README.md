@@ -74,3 +74,11 @@ once all is done we can bring down the web
 ~~~
 docker-compose down
 ~~~
+
+## Diff between ADD & COPY
+
+COPY: it is used to copy the files from local to image base.
+
+ADD: it is similar to copy but add can also copy files from zip files or web URL.
+
+Best Practices: we need to use copy as default and use add only when needed.
