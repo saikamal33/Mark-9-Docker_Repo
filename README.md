@@ -82,3 +82,10 @@ COPY: it is used to copy the files from local to image base.
 ADD: it is similar to copy but add can also copy files from zip files or web URL.
 
 Best Practices: we need to use copy as default and use add only when needed.
+
+## Dock-proj4
+This docker file is used to build a docker image, which containes docker and maven pre installed in it.
+~~~
+docker build -t kamalsai33/maven-docker-agt:v1 .
+~~~
+This images is used in the Spring-boot-webapp project "https://github.com/saikamal33/Spring-boot-webapp.git"
