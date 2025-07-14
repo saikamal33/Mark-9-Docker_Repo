@@ -1,5 +1,22 @@
 # Mark-9
 This is to perform docker activity
+## Secrets in docker
+
+We can store the sensitive details in docker by storing them in secrets file. Docker mounts secrets as readonly files so its more secure.
+
+To Create a secret file
+~~~
+echo "my-user" | docker secret create db_user -
+echo "mypassword" | docker secret create db_pass -
+~~~
+To Add that secrets to the docker file 
+~~~
+docker service create \
+  --name php-app \
+  --secret db_user \
+  --secret db_pass \
+  my-php-app
+~~~
 
 ## docke installation
 
