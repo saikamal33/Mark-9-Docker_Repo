@@ -106,3 +106,7 @@ This docker file is used to build a docker image, which containes docker and mav
 docker build -t kamalsai33/maven-docker-agt:v1 .
 ~~~
 This images is used in the Spring-boot-webapp project "https://github.com/saikamal33/Spring-boot-webapp.git"
+
+## Things to note
+
+We do need to specify the port in docker command or docker-compose, even if we specify the **EXPOSE** in the docker image. **EXPOSE** is mostly used for documentaiton purposes in an image
